@@ -13,6 +13,7 @@ sum_result = num1 + num2
 diff_result = num1 - num2
 mult_result = num1 * num2
 
+"""
 #output results
 
 print(f"\nResults:")
@@ -26,4 +27,32 @@ if num2 != 0:
     print(f"{num1} / {num2} = {div_result}")
 else:
     print("Fuck you! this is Zero")
+"""
+
+#extention
+operation = input("type of operation:(+, -, *, /, **, %): ")
+idiot = False
+if operation == '+':
+	result = num1 + num2
+elif operation == '-':
+        result = num1 - num2
+elif operation == '*':
+        result = num1 * num2
+elif operation == '/':
+	if num2 != 0:
+	        result = num1 / num2
+	else: 
+		idiot = True
+elif operation == '**':
+        result = num1 ** num2
+elif operation == '%':
+        result = num1 % num2
+else: 
+	idiot = True
+if idiot == False:
+	print(f'{num1} {operation} {num2} = {result}')
+else: 
+	print("Are you Idiot?")
+
+	
 
